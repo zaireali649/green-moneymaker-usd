@@ -15,3 +15,7 @@ def generate_file(name: str = None, size: int = random.randint(1, 10)) -> None:
     with open(name, 'wb') as fout:
         fout.write(os.urandom(size))
     fout.close()
+
+if __name__ == "__main__":  
+    for i in range(10):
+        generate_file()
